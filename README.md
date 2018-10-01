@@ -16,6 +16,29 @@ simple, dark macOS application icons.
 - [ ] iTunes
 - [ ] Preview
 - [ ] QuickTime Player
+- [ ] Activity Monitor
+- [ ] Console
+- [ ] Terminal
+- [ ] Books
+- [ ] Calendar
+- [ ] Chess
+- [ ] Contacts
+- [ ] Dashboard
+- [ ] Dictionary
+- [ ] Dropbox
+- [ ] Facetime
+- [ ] Font Book
+- [ ] Camera
+- [ ] Launchpad
+- [ ] Maps
+- [ ] News
+- [ ] Notes
+- [ ] Numbers
+- [ ] Pages
+- [ ] Photos
+- [ ] Reminders
+- [ ] Skype
+- [ ] Xcode
 
 ### Completed
 
