@@ -6,17 +6,10 @@ simple, dark macOS application icons.
 
 ### To do
 
-- [ ] Electron
 - [ ] System Preferences
 - [ ] TextEdit
 - [ ] Trash
-- [ ] App Store
-- [ ] Left
-- [ ] Dotgrid
-- [ ] iTunes
-- [ ] Preview
 - [ ] QuickTime Player
-- [ ] Activity Monitor
 - [ ] Console
 - [ ] Terminal
 - [ ] Books
@@ -42,6 +35,13 @@ simple, dark macOS application icons.
 
 ### Completed
 
+- [X] Activity Monitor
+- [X] App Store
+- [X] Left
+- [X] Dotgrid
+- [X] iTunes
+- [X] Preview
+- [X] Electron
 - [X] Atom
 - [X] Calculator
 - [X] Google Chrome
