@@ -1,0 +1,23 @@
+{
+  "name": "dusk-icons",
+  "version": "0.0.1",
+  "description": "simple, minimal application icons",
+  "main": "./index.js",
+  "bin": {
+    "dusk-icons": "./index.js"
+  },
+  "repository": "pacocoursey/dusk",
+  "keywords": [
+    "dusk",
+    "icon",
+    "icons",
+    "macos",
+    "application"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
