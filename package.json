@@ -18,6 +18,10 @@
   "scripts": {
     "start": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "fs-extra": "^7.0.0",
+    "ora": "^3.0.0",
+    "svgexport": "^0.3.2"
+  },
   "devDependencies": {}
 }

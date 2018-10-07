@@ -1,0 +1,10 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 545" xml:space="preserve">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" />
+    </filter>
+  </defs>
+
+	<circle filter="url(#shadow)" fill="#1e1e1e" cx="272.421" cy="272.419" r="256" />
+	<polygon fill="#FFFFFF" points="412.956,131.885 248.999,248.996 131.885,412.953 295.843,295.842" />
+</svg>
