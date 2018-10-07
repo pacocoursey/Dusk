@@ -6,35 +6,35 @@ simple, dark macOS application icons.
 
 ### To do
 
-- [ ] System Preferences
 - [ ] TextEdit
-- [ ] Trash
 - [ ] QuickTime Player
 - [ ] Console
-- [ ] Terminal
-- [ ] Books
 - [ ] Calendar
-- [ ] Chess
 - [ ] Contacts
 - [ ] Dashboard
-- [ ] Dictionary
-- [ ] Dropbox
-- [ ] Facetime
-- [ ] Font Book
-- [ ] Camera
 - [ ] Launchpad
-- [ ] Maps
-- [ ] News
-- [ ] Notes
 - [ ] Numbers
-- [ ] Pages
-- [ ] Photos
-- [ ] Reminders
-- [ ] Skype
-- [ ] Xcode
 
 ### Completed
 
+- [X] Maps
+- [X] Pages
+- [X] Xcode
+- [X] Skype
+- [X] Reminders
+- [X] Dictionary
+- [X] Trash
+- [X] Terminal
+- [X] System Preferences
+- [X] Photos ????
+- [X] Notes
+- [X] News
+- [X] Books
+- [X] Camera
+- [X] Font Book
+- [X] Chess
+- [X] Dropbox
+- [X] Facetime
 - [X] Activity Monitor
 - [X] App Store
 - [X] Left
