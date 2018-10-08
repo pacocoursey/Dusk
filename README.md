@@ -4,19 +4,15 @@ simple, dark macOS application icons.
 
 ## Icons
 
-### To do
-
-- [ ] TextEdit
-- [ ] QuickTime Player
-- [ ] Console
-- [ ] Calendar
-- [ ] Contacts
-- [ ] Dashboard
-- [ ] Launchpad
-- [ ] Numbers
-
 ### Completed
 
+- [X] iMovie
+- [X] Contacts
+- [X] Calendar
+- [X] Console
+- [X] Dashboard
+- [X] Numbers
+- [X] Launchpad
 - [X] Maps
 - [X] Pages
 - [X] Xcode
