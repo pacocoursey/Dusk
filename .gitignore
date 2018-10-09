@@ -1,3 +1,4 @@
 .DS_Store
 *.ai
+*.png
 node_modules/
