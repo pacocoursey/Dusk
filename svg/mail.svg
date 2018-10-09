@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="520px" height="520px" viewBox="0 0 520 520" enable-background="new 0 0 520 520" xml:space="preserve">
-<g>
-	<circle fill="#1E1E1E" cx="260" cy="259.083" r="256"/>
-</g>
-<rect x="132.5" y="163.458" fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="255" height="191.25"/>
-<polyline fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-	373.317,174.095 260,259.083 146.682,174.095 "/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><circle fill="#1E1E1E" cx="256" cy="256" r="256"/><g fill="none" stroke="#FFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"><path d="M128.5 160.375h255v191.25h-255z"/><path d="M369.318 171.012L256 256l-113.318-84.988"/></g></svg>

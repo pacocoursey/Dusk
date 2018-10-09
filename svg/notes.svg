@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="520px" height="520px" viewBox="0 0 520 520" enable-background="new 0 0 520 520" xml:space="preserve">
-<g>
-	<g>
-		<circle fill="#1E1E1E" cx="260" cy="259.2" r="256"/>
-	</g>
-	<g>
-		
-			<rect x="169.941" y="144.375" transform="matrix(0.9877 -0.1564 0.1564 0.9877 -37.3469 43.8643)" fill="#FFFFFF" width="180.118" height="229.651"/>
-		
-			<rect x="154.401" y="145.598" transform="matrix(0.9877 -0.1564 0.1564 0.9877 -22.1901 40.2254)" fill="#D1D3D4" width="180.118" height="30.98"/>
-	</g>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><circle fill="#1E1E1E" cx="256" cy="256" r="256"/><path fill="#FFF" d="M149.085 156.684l177.903-28.17 35.917 226.825-177.902 28.17z"/><path fill="#D1D3D4" d="M149.083 156.684l177.903-28.17 4.845 30.599-177.902 28.17z"/></svg>
