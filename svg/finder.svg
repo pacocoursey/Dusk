@@ -4,7 +4,20 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="520px" height="520px" viewBox="0 0 520 520" enable-background="new 0 0 520 520" xml:space="preserve">
 <g>
+	<g>
+		<rect x="297" y="361.301" fill="#FFFFFF" width="108" height="20"/>
+	</g>
+	<g>
+		<rect x="297" y="320.701" fill="#FFFFFF" width="108" height="20"/>
+	</g>
+</g>
+<g>
+	<rect x="297" y="159" fill="#FFFFFF" width="108" height="20"/>
+</g>
+<g>
 	<circle fill="#1E1E1E" cx="260" cy="260" r="256"/>
 </g>
-<polygon fill="#FFFFFF" points="400.535,119.465 236.578,236.577 119.464,400.534 283.422,283.422 "/>
+<path fill="#FFFFFF" d="M183.6,250V15.604c-1.674,0.522-3.341,1.061-5,1.616c-3.367,1.129-6.697,2.334-10,3.598
+	c-1.676,0.641-3.341,1.303-5,1.978V270h172.8v234.395c1.674-0.521,3.341-1.061,5-1.615c3.367-1.127,6.697-2.334,10-3.596
+	c1.676-0.641,3.341-1.303,5-1.979V250H183.6z"/>
 </svg>
