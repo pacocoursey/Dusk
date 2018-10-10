@@ -2,9 +2,19 @@
 
 simple, dark macOS application icons.
 
-## Icons
+<p align="center">
+  <img height="100" width="100" src="assets/safari.png">
+  <img height="100" width="100" src="assets/hyper.png">
+  <img height="100" width="100" src="assets/atom.png">
+</p>
 
-### Completed
+## Install
+
+```bash
+$ [sudo] npm install -g dusk-icons
+```
+
+## Icons
 
 - [X] iMovie
 - [X] Contacts
@@ -22,7 +32,7 @@ simple, dark macOS application icons.
 - [X] Trash
 - [X] Terminal
 - [X] System Preferences
-- [X] Photos ????
+- [X] Photos
 - [X] Notes
 - [X] News
 - [X] Books
