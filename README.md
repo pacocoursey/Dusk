@@ -1,6 +1,6 @@
 # Dusk
 
-simple, dark macOS application icons.
+simple, customizable macOS application icons.
 
 <p align="center">
   <img height="100" width="100" src="assets/safari.png">
