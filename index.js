@@ -1,43 +1,103 @@
-#!/usr/bin/env node
-
-const ora = require('ora');
+const path = require('path');
 const fs = require('fs-extra');
-const svgexport = require('svgexport');
+const prompts = require('prompts');
+const { convertFile } = require('convert-svg-to-png');
 
-/**
- * Use svgexport to convert an svg to a png of size 512 px.
- */
-
-async function convert(inputPath, icon, spinner) {
-  await svgexport.render({
-    input: inputPath,
-    output: `${icon}.png 512:512`,
-  }, (err) => {
-    if (err) {
-      spinner.fail(err);
-    } else {
-      spinner.succeed(`Generated ${icon}.png!`);
-    }
-  });
+function fail(msg) {
+  console.log(`✖ ${msg}`);
 }
 
-// Exit if no icons specified
-if (process.argv.length <= 2) {
-  console.error('No icon specified.');
-  process.exit();
+function succeed(msg) {
+  console.log(`✔ ${msg}`);
 }
 
-// Get a list of icons
-const icons = [...process.argv.slice(2)];
+async function convert(outputPath, icon) {
+  const input = `./svg/${icon}.svg`;
+  const doesExist = await fs.pathExists(input);
 
-// Generate each specified icon if there exists an svg for it.
-icons.forEach(async (icon) => {
-  const path = `./svg/${icon}.svg`;
-  const fn = await fs.pathExists(path);
-  const spinner = ora(`Generating the ${icon} icon...`).start();
-  if (fn) {
-    await convert(path, icon, spinner);
-  } else {
-    spinner.fail(`Dusk does not include a ${icon} icon.`);
+  if (!doesExist) {
+    return false;
   }
-});
+
+  const output = await convertFile(input, {
+    height: 512,
+    width: 512,
+    outputFilePath: outputPath,
+  });
+
+  return output;
+}
+
+async function convertAll(outputDir) {
+  // TODO: get all the icons with readdir and convert them all
+}
+
+async function start() {
+  const questions = [
+    {
+      type: 'text',
+      name: 'output',
+      message: 'Output directory:',
+      initial: '.',
+    },
+    {
+      type: 'text',
+      name: 'primary',
+      message: 'Primary foreground color:',
+      initial: '#ffffff',
+    },
+    {
+      type: 'text',
+      name: 'secondary',
+      message: 'Secondary foreground color:',
+      initial: '#efefef',
+    },
+    {
+      type: 'text',
+      name: 'bg',
+      message: 'Background color:',
+      initial: '#1e1e1e',
+    },
+    {
+      type: 'list',
+      name: 'icons',
+      message: 'Enter icons to generate:',
+      initial: 'all',
+      separator: ',',
+    },
+  ];
+
+  try {
+    const response = await prompts(questions, {
+      onCancel: () => {
+        fail('Cancelled dusk-icons.');
+        process.exit(1);
+      },
+    });
+
+    const { output, icons } = response;
+
+    if (icons.includes('all')) {
+      await convertAll(output);
+    } else {
+      /* eslint-disable */
+      for (icon of icons) {
+        icon = icon.replace(' ', '_');
+        const outputPath = path.resolve(output, `${icon}.png`);
+        const file = await convert(outputPath, icon);
+
+        if (!file) {
+          fail(`Icon ${icon} does not exist.`);
+        } else {
+          succeed(`Generated ${icon} icon at ${file}`);
+        }
+      }
+      /* eslint-enable */
+    }
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
+}
+
+start();

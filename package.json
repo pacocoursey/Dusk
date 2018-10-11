@@ -19,9 +19,9 @@
     "start": ""
   },
   "dependencies": {
+    "convert-svg-to-png": "^0.4.0",
     "fs-extra": "^7.0.0",
-    "ora": "^3.0.0",
-    "svgexport": "^0.3.2"
+    "prompts": "^1.1.1"
   },
   "devDependencies": {}
 }
