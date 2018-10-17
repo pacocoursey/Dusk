@@ -14,7 +14,7 @@ function succeed(msg) {
 }
 
 async function convert(outputPath, icon) {
-  const input = `./svg/${icon}.svg`;
+  const input = path.join(__dirname, `svg/${icon}.svg`);
   const doesExist = await fs.pathExists(input);
 
   if (!doesExist) {
