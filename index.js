@@ -31,7 +31,22 @@ async function convert(outputPath, icon) {
 }
 
 async function convertAll(outputDir) {
-  // TODO: get all the icons with readdir and convert them all
+  const icons = fs.readdirSync(path.join(__dirname, 'svg/'))
+    .filter(icon => icon.endsWith('.svg'))
+    .map(icon => icon.slice(0, -4));
+
+  /* eslint-disable */
+  for (icon of icons) {
+    const outputPath = path.resolve(outputDir, `${icon}.png`);
+    const file = await convert(outputPath, icon);
+
+    if (!file) {
+      fail(`A problem occured while generating the ${icon} icon.`);
+    } else {
+      succeed(`Generated ${icon} icon at ${file}`);
+    }
+  }
+  /* eslint-enable */
 }
 
 async function start() {
