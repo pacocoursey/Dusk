@@ -1,3 +1,4 @@
 .DS_Store
 *.ai
 node_modules/
+package-lock.json
