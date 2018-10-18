@@ -49,6 +49,10 @@ async function convertAll(outputDir) {
   /* eslint-enable */
 }
 
+function hexMatch(str) {
+  return /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(str);
+}
+
 async function start() {
   const questions = [
     {
@@ -62,18 +66,21 @@ async function start() {
       name: 'primary',
       message: 'Primary foreground color:',
       initial: '#ffffff',
+      validate: value => (!hexMatch(value) ? 'Please enter a valid hex code.' : true),
     },
     {
       type: 'text',
       name: 'secondary',
       message: 'Secondary foreground color:',
       initial: '#efefef',
+      validate: value => (!hexMatch(value) ? 'Please enter a valid hex code.' : true),
     },
     {
       type: 'text',
       name: 'bg',
       message: 'Background color:',
       initial: '#1e1e1e',
+      validate: value => (!hexMatch(value) ? 'Please enter a valid hex code.' : true),
     },
     {
       type: 'list',
