@@ -8,7 +8,7 @@ simple, customizable macOS application icons.
   <img height="100" width="100" src="assets/atom.png">
 </p>
 
-## Install
+## Install [![npm version](https://badge.fury.io/js/dusk-icons.svg)](https://badge.fury.io/js/dusk-icons)
 
 ```bash
 $ [sudo] npm install -g dusk-icons
