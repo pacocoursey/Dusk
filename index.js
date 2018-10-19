@@ -17,6 +17,10 @@ function succeed(msg) {
   console.log(`✔ ${msg}`);
 }
 
+function hexMatch(str) {
+  return /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(str);
+}
+
 async function convert(inputPath, outputPath) {
   const doesExist = await fs.pathExists(inputPath);
 
@@ -33,27 +37,76 @@ async function convert(inputPath, outputPath) {
   return output;
 }
 
-async function convertAll(outputDir) {
-  const icons = fs.readdirSync(path.join(__dirname, 'svg/'))
-    .filter(icon => icon.endsWith('.svg'))
-    .map(icon => icon.slice(0, -4));
+async function convertIcons(options) {
+  const {
+    output,
+    fg,
+    fg2,
+    bg,
+    icons,
+  } = options;
 
   /* eslint-disable */
   for (icon of icons) {
-    const outputPath = path.resolve(outputDir, `${icon}.png`);
-    const file = await convert(outputPath, icon);
+    try {
+      icon = icon.replace(' ', '_');
+      const outputPath = path.resolve(output, `${icon}.png`);
+      const inputPath = path.join(__dirname, `svg/${icon}.svg`);
 
-    if (!file) {
-      fail(`A problem occured while generating the ${icon} icon.`);
-    } else {
-      succeed(`Generated ${icon} icon at ${file}`);
+      // Read the original svg file
+      let tmpFile = await readFile(inputPath, 'utf-8');
+
+      // Replace with specified colors
+      tmpFile = tmpFile
+        .replace('{{bg}}', bg)
+        .replace('{{fg}}', fg)
+        .replace('{{fg2}}', fg2);
+
+      // Write the temporary svg file
+      const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
+      await writeFile(tmpFilePath, tmpFile, 'utf-8');
+
+      // Pass the temporary svg file to convert it
+      const file = await convert(tmpFilePath, outputPath);
+
+      // Check if conversion was successful
+      if (!file) {
+        fail(`Icon ${icon} does not exist.`);
+      } else {
+        succeed(`Generated ${icon} icon at ${file}`);
+      }
+
+      // Remove the generated temporary file
+      await fs.remove(tmpFilePath);
+    } catch (err) {
+      console.log(err);
+      process.exit(1);
     }
   }
   /* eslint-enable */
 }
 
-function hexMatch(str) {
-  return /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(str);
+async function convertAll(response) {
+  const {
+    output,
+    fg,
+    fg2,
+    bg,
+  } = response;
+
+  // Get a list of all icons in the svg folder.
+  // Filter out dotfiles, remove the .svg extension
+  const icons = fs.readdirSync(path.join(__dirname, 'svg/'))
+    .filter(icon => icon.endsWith('.svg'))
+    .map(icon => icon.slice(0, -4));
+
+  convertIcons({
+    output,
+    fg,
+    fg2,
+    bg,
+    icons,
+  });
 }
 
 async function start() {
@@ -102,60 +155,17 @@ async function start() {
       },
     });
 
-    const {
-      output,
-      fg,
-      fg2,
-      bg,
-      icons,
-    } = response;
+    const { icons } = response;
 
     if (icons.includes('all')) {
       try {
-        await convertAll(output);
+        await convertAll(response);
       } catch (err) {
         console.log(err);
         process.exit(1);
       }
     } else {
-      /* eslint-disable */
-      for (icon of icons) {
-        try {
-          icon = icon.replace(' ', '_');
-          const outputPath = path.resolve(output, `${icon}.png`);
-          const inputPath = path.join(__dirname, `svg/${icon}.svg`);
-
-          // Read the original svg file
-          let tmpFile = await readFile(inputPath, 'utf-8');
-
-          // Replace with specified colors
-          tmpFile = tmpFile
-            .replace('{{bg}}', bg)
-            .replace('{{fg}}', fg)
-            .replace('{{fg2}}', fg2);
-
-          // Write the temporary svg file
-          const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
-          await writeFile(tmpFilePath, tmpFile, 'utf-8');
-
-          // Pass the temporary svg file to convert it
-          const file = await convert(tmpFilePath, outputPath);
-
-          // Check if conversion was successful
-          if (!file) {
-            fail(`Icon ${icon} does not exist.`);
-          } else {
-            succeed(`Generated ${icon} icon at ${file}`);
-          }
-
-          // Remove the generated temporary file
-          await fs.remove(tmpFilePath);
-        } catch (err) {
-          console.log(err);
-          process.exit(1);
-        }
-      }
-      /* eslint-enable */
+      convertIcons(response);
     }
   } catch (err) {
     console.log(err);
