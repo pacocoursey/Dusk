@@ -3,7 +3,11 @@
 const path = require('path');
 const fs = require('fs-extra');
 const prompts = require('prompts');
+const { promisify } = require('util');
 const { convertFile } = require('convert-svg-to-png');
+
+const writeFile = promisify(fs.writeFile);
+const readFile = promisify(fs.readFile);
 
 function fail(msg) {
   console.log(`✖ ${msg}`);
@@ -13,15 +17,14 @@ function succeed(msg) {
   console.log(`✔ ${msg}`);
 }
 
-async function convert(outputPath, icon) {
-  const input = path.join(__dirname, `svg/${icon}.svg`);
-  const doesExist = await fs.pathExists(input);
+async function convert(inputPath, outputPath) {
+  const doesExist = await fs.pathExists(inputPath);
 
   if (!doesExist) {
     return false;
   }
 
-  const output = await convertFile(input, {
+  const output = await convertFile(inputPath, {
     height: 512,
     width: 512,
     outputFilePath: outputPath,
@@ -63,14 +66,14 @@ async function start() {
     },
     {
       type: 'text',
-      name: 'primary',
+      name: 'fg',
       message: 'Primary foreground color:',
       initial: '#ffffff',
       validate: value => (!hexMatch(value) ? 'Please enter a valid hex code.' : true),
     },
     {
       type: 'text',
-      name: 'secondary',
+      name: 'fg2',
       message: 'Secondary foreground color:',
       initial: '#efefef',
       validate: value => (!hexMatch(value) ? 'Please enter a valid hex code.' : true),
@@ -99,21 +102,57 @@ async function start() {
       },
     });
 
-    const { output, icons } = response;
+    const {
+      output,
+      fg,
+      fg2,
+      bg,
+      icons,
+    } = response;
 
     if (icons.includes('all')) {
-      await convertAll(output);
+      try {
+        await convertAll(output);
+      } catch (err) {
+        console.log(err);
+        process.exit(1);
+      }
     } else {
       /* eslint-disable */
       for (icon of icons) {
-        icon = icon.replace(' ', '_');
-        const outputPath = path.resolve(output, `${icon}.png`);
-        const file = await convert(outputPath, icon);
+        try {
+          icon = icon.replace(' ', '_');
+          const outputPath = path.resolve(output, `${icon}.png`);
+          const inputPath = path.join(__dirname, `svg/${icon}.svg`);
 
-        if (!file) {
-          fail(`Icon ${icon} does not exist.`);
-        } else {
-          succeed(`Generated ${icon} icon at ${file}`);
+          // Read the original svg file
+          let tmpFile = await readFile(inputPath, 'utf-8');
+
+          // Replace with specified colors
+          tmpFile = tmpFile
+            .replace('{{bg}}', bg)
+            .replace('{{fg}}', fg)
+            .replace('{{fg2}}', fg2);
+
+          // Write the temporary svg file
+          const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
+          await writeFile(tmpFilePath, tmpFile, 'utf-8');
+
+          // Pass the temporary svg file to convert it
+          const file = await convert(tmpFilePath, outputPath);
+
+          // Check if conversion was successful
+          if (!file) {
+            fail(`Icon ${icon} does not exist.`);
+          } else {
+            succeed(`Generated ${icon} icon at ${file}`);
+          }
+
+          // Remove the generated temporary file
+          await fs.remove(tmpFilePath);
+        } catch (err) {
+          console.log(err);
+          process.exit(1);
         }
       }
       /* eslint-enable */
