@@ -1,56 +1,48 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Grid = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1100px;
+`;
+
+const Icon = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  margin: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: background-color 200ms;
+
+  :hover {
+    background-color: #efefef;
+  }
+`;
 
 const IconGrid = ({ icons }) => (
-  <div className="grid">
+  <Grid>
 
     {icons.map(icon => (
-      <div>
+      <Icon>
         <div className="icon">
           <img src={icon.src} alt={`${icon.name} Icon`} />
         </div>
         <p>{icon.name}</p>
-      </div>
+      </Icon>
     ))}
-
-    <style jsx>
-      {`
-        .grid {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          flex-wrap: wrap;
-          width: 100%;
-          padding: 0 20px;
-          max-width: 1100px;
-        }
-
-        .grid > div {
-          width: 200px;
-          height: 200px;
-          min-width: 200px;
-          border-radius: 3px;
-          background-color: #f9f9f9;
-          margin: 5px 5px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          transition: background-color 200ms;
-        }
-
-        .grid > div:hover {
-          background-color: #efefef;
-          transition: background-color 200ms;
-        }
-
-        .grid > div > .icon > img {
-          height: 50px;
-          width: auto;
-        }
-      `}
-    </style>
-  </div>
+  </Grid>
 );
 
 export default IconGrid;
