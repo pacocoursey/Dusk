@@ -21,8 +21,9 @@ const Wrapper = styled.div`
   height: 100vh;
 `;
 
-const Main = styled.div`
-  padding: 50px 0;
+const Main = styled.main`
+  padding: 50px 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

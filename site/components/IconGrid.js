@@ -3,16 +3,13 @@ import styled from 'styled-components';
 
 const Grid = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 0 20px;
-  width: 100%;
-  max-width: 1100px;
+  max-width: 1000px;
 `;
 
 const Icon = styled.div`
-  width: 200px;
+  flex: 1;
+  min-width: 200px;
   height: 200px;
   border-radius: 3px;
   background-color: #f9f9f9;
@@ -35,7 +32,7 @@ const IconGrid = ({ icons }) => (
   <Grid>
 
     {icons.map(icon => (
-      <Icon>
+      <Icon key={icon.name}>
         <div className="icon">
           <img src={icon.src} alt={`${icon.name} Icon`} />
         </div>
