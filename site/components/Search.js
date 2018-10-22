@@ -14,10 +14,11 @@ const SearchBar = styled.input`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 4px;
 `;
 
-const Search = () => (
+const Search = props => (
   <SearchBar
     type="text"
     placeholder="Search icons..."
+    onChange={e => props.onChange(e)}
   />
 );
 
