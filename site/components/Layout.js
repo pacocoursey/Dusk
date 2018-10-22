@@ -1,21 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from './Header';
 
-const Layout = ({ children }) => (
-  <div>
-    <Header />
-    { children }
 
-    <style jsx>
-      {`
-        div {
-          margin: 0;
-          padding: 0;
-          height: 100vh;
-          width: 100vw;
-        }
-      `}
-    </style>
+const Wrapper = styled.div`
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+`;
+
+const Main = styled.div`
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
+const Layout = ({ children }) => (
+  <Wrapper>
+    <Header />
+    <Main>
+      { children }
+    </Main>
 
     <style jsx global>
       {`
@@ -31,7 +38,7 @@ const Layout = ({ children }) => (
         }
       `}
     </style>
-  </div>
+  </Wrapper>
 );
 
 export default Layout;
