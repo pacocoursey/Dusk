@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <title>My page</title>
+          <title>Dusk Icons</title>
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>
