@@ -3,38 +3,24 @@ import Layout from '../components/Layout';
 import Search from '../components/Search';
 import IconGrid from '../components/IconGrid';
 
+import {
+  ActivityMonitor,
+  Calculator,
+  Dashboard,
+} from '../icons/Dusk';
+
 const icons = [
   {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Safari',
+    svg: <ActivityMonitor height={100} width={100} />,
+    name: 'Activity Monitor',
   },
   {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Atom',
-  },
-  {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Hyper',
-  },
-  {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Finder',
-  },
-  {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Books',
-  },
-  {
-    src: 'https://via.placeholder.com/100x100',
+    svg: <Calculator height={100} width={100} />,
     name: 'Calculator',
   },
   {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Calendar',
-  },
-  {
-    src: 'https://via.placeholder.com/100x100',
-    name: 'Camera',
+    svg: <Dashboard height={100} width={100} />,
+    name: 'Dashboard',
   },
 ];
 
