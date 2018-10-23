@@ -14,6 +14,10 @@ simple, customizable macOS application icons.
 $ [sudo] npm install -g dusk-icons
 ```
 
+## Usage
+
+Run `dusk-icons` from the command line. You will be prompted for a background, foreground, and secondary foreground color. A list of valid icons to generate can be found below.
+
 ## Icons
 
 - [X] iMovie
