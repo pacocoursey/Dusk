@@ -1,3 +1,7 @@
 {
-  "alias": "dusk.now.sh"
+  "alias": "dusk.now.sh",
+  "type": "docker",
+  "features": {
+    "cloud": "v2"
+  }
 }
