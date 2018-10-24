@@ -24,7 +24,7 @@ const Left = styled.div`
   align-items: center;
 `;
 
-const Center = styled.div`
+const Center = styled.h1`
   font-size: 24px;
   font-weight: 800;
   flex: 1;

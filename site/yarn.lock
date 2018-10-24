@@ -1792,6 +1792,11 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
+dusk-react@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/dusk-react/-/dusk-react-0.0.4.tgz#e50f5fc31fca6a741f4e44e7b9445505b5bcd658"
+  integrity sha512-1uzWST0Ttk2APB4C72897yjlOP1ihCy/IMOR8j4By5nVSYQXHPRyclhJzekC5/k8i/RfTtIaUgbYbguOQCprIg==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"

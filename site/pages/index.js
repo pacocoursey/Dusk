@@ -1,26 +1,17 @@
 import React from 'react';
+import { ActivityMonitor, FaceTime } from 'dusk-react';
 import Layout from '../components/Layout';
 import Search from '../components/Search';
 import IconGrid from '../components/IconGrid';
 
-import {
-  ActivityMonitor,
-  Calculator,
-  Dashboard,
-} from '../icons/Dusk';
-
 const icons = [
   {
-    svg: <ActivityMonitor height={100} width={100} />,
+    svg: <ActivityMonitor size={100} />,
     name: 'Activity Monitor',
   },
   {
-    svg: <Calculator height={100} width={100} />,
-    name: 'Calculator',
-  },
-  {
-    svg: <Dashboard height={100} width={100} />,
-    name: 'Dashboard',
+    svg: <FaceTime size={100} />,
+    name: 'FaceTime',
   },
 ];
 
