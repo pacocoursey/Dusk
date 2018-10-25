@@ -11,6 +11,7 @@ class Index extends React.Component {
     this.state = {
       initialItems: icons,
       items: icons,
+      query: '',
     };
   }
 
@@ -23,16 +24,17 @@ class Index extends React.Component {
 
     this.setState({
       items: list,
+      query: e.target.value.toLowerCase(),
     });
   }
 
   render() {
-    const { items } = this.state;
+    const { items, query } = this.state;
 
     return (
       <Layout>
         <Search onChange={e => this.filterList(e)} />
-        <IconGrid icons={items} />
+        <IconGrid icons={items} query={query} />
       </Layout>
     );
   }
