@@ -15,6 +15,7 @@ class Index extends React.Component {
       initialItems: icons,
       items: icons,
       query: '',
+      isColorsActive: false,
     };
   }
 
@@ -34,17 +35,42 @@ class Index extends React.Component {
   updateColors(o) {
     const icons = Icons(o);
     this.setState({
+      initialItems: icons,
+      items: icons,
+    });
+  }
+
+  toggleColors() {
+    this.setState(prevState => ({
+      isColorsActive: !prevState.isColorsActive,
+    }));
+  }
+
+  resetColors() {
+    const icons = Icons({});
+    this.setState({
+      initialItems: icons,
       items: icons,
     });
   }
 
   render() {
-    const { items, query } = this.state;
+    const { items, query, isColorsActive } = this.state;
 
     return (
       <Layout>
-        <Search onChange={e => this.filterList(e)} />
-        <Colors handleClick={o => this.updateColors(o)} />
+        <Search
+          onChange={e => this.filterList(e)}
+          handleClick={() => this.toggleColors()}
+          active={isColorsActive}
+        />
+
+        <Colors
+          applyColors={o => this.updateColors(o)}
+          resetColors={() => this.resetColors()}
+          active={isColorsActive}
+        />
+
         <IconGrid icons={items} query={query} />
       </Layout>
     );

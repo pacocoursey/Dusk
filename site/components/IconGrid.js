@@ -39,12 +39,13 @@ const None = styled.div`
   min-width: 100%;
   width: 100%;
 
-  padding: 20px 0;
+  padding: 20px;
   margin: 5px;
 
   border-radius: 5px;
   background-color: #f9f9f9;
   color: #868e96;
+  text-align: center;
 
   display: flex;
   flex-direction: column;

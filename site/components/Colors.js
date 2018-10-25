@@ -16,6 +16,8 @@ const Box = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  ${props => (props.active ? 'display: flex' : 'display: none')}
 `;
 
 const Input = styled.div`
@@ -81,6 +83,30 @@ const Button = styled.button`
   }
 `;
 
+const Reset = styled.button`
+  padding: 15px;
+
+  color: #868e96;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: 3px;
+
+  cursor: pointer;
+  outline: none;
+  transition: background-color 200ms;
+
+  :hover {
+    background-color: #f8f9fa;
+  }
+
+  :active {
+    background-color: #f1f3f5;
+  }
+`;
+
 class Colors extends React.Component {
   constructor(props) {
     super(props);
@@ -93,10 +119,10 @@ class Colors extends React.Component {
   }
 
   render() {
-    const { handleClick } = this.props;
+    const { active, applyColors, resetColors } = this.props;
 
     return (
-      <Box>
+      <Box active={active}>
         <Input>
           <Name>Background</Name>
           <TextInput
@@ -127,7 +153,11 @@ class Colors extends React.Component {
           />
         </Input>
 
-        <Button onClick={() => handleClick(this.state)}>
+        <Reset onClick={() => resetColors()}>
+          Reset
+        </Reset>
+
+        <Button onClick={() => applyColors(this.state)}>
           Apply
         </Button>
       </Box>
