@@ -3,9 +3,9 @@
 simple, customizable macOS application icons.
 
 <p align="center">
-  <img height="100" width="100" src="assets/safari.png">
-  <img height="100" width="100" src="assets/hyper.png">
-  <img height="100" width="100" src="assets/atom.png">
+  <img height="100" width="100" src="https://github.com/pacocoursey/Dusk/blob/master/assets/safari.png?raw=true">
+  <img height="100" width="100" src="https://github.com/pacocoursey/Dusk/blob/master/assets/hyper.png?raw=true">
+  <img height="100" width="100" src="https://github.com/pacocoursey/Dusk/blob/master/assets/atom.png?raw=true">
 </p>
 
 ## Install
