@@ -1,27 +1,21 @@
 import React from 'react';
-import { ActivityMonitor, FaceTime } from 'dusk-react';
+import Icons from '../components/Icons';
 import Layout from '../components/Layout';
 import Search from '../components/Search';
+import Colors from '../components/Colors';
 import IconGrid from '../components/IconGrid';
-
-const icons = [
-  {
-    svg: <ActivityMonitor size={100} />,
-    name: 'Activity Monitor',
-  },
-  {
-    svg: <FaceTime size={100} />,
-    name: 'FaceTime',
-  },
-];
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
 
+    const icons = Icons({});
+
     this.state = {
       initialItems: icons,
       items: icons,
+      query: '',
+      isColorsActive: false,
     };
   }
 
@@ -34,16 +28,50 @@ class Index extends React.Component {
 
     this.setState({
       items: list,
+      query: e.target.value.toLowerCase(),
+    });
+  }
+
+  updateColors(o) {
+    const icons = Icons(o);
+    this.setState({
+      initialItems: icons,
+      items: icons,
+    });
+  }
+
+  toggleColors() {
+    this.setState(prevState => ({
+      isColorsActive: !prevState.isColorsActive,
+    }));
+  }
+
+  resetColors() {
+    const icons = Icons({});
+    this.setState({
+      initialItems: icons,
+      items: icons,
     });
   }
 
   render() {
-    const { items } = this.state;
+    const { items, query, isColorsActive } = this.state;
 
     return (
       <Layout>
-        <Search onChange={e => this.filterList(e)} />
-        <IconGrid icons={items} />
+        <Search
+          onChange={e => this.filterList(e)}
+          handleClick={() => this.toggleColors()}
+          active={isColorsActive}
+        />
+
+        <Colors
+          applyColors={o => this.updateColors(o)}
+          resetColors={() => this.resetColors()}
+          active={isColorsActive}
+        />
+
+        <IconGrid icons={items} query={query} />
       </Layout>
     );
   }
