@@ -9,7 +9,7 @@
     "dev": "next",
     "start": "next start",
     "build": "next build",
-    "export": "next export"
+    "export": "next build && next export"
   },
   "dependencies": {
     "dusk-react": "0.0.4",
