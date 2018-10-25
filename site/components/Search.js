@@ -40,6 +40,7 @@ const Toggle = styled.button`
 
   cursor: pointer;
   outline: none;
+  background-color: transparent;
   transition: background-color 200ms;
 
   :hover {

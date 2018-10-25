@@ -45,6 +45,7 @@ const TextInput = styled.input`
   flex: 1;
 
   width: 100%;
+  min-width: 0;
   padding: 15px;
 
   border: 0;
@@ -72,6 +73,7 @@ const Button = styled.button`
 
   cursor: pointer;
   outline: none;
+  background-color: transparent;
   transition: background-color 200ms;
 
   :hover {
@@ -96,6 +98,7 @@ const Reset = styled.button`
 
   cursor: pointer;
   outline: none;
+  background-color: transparent;
   transition: background-color 200ms;
 
   :hover {

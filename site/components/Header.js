@@ -65,7 +65,7 @@ const Header = () => (
       </Link>
 
       <Link
-        href="https://github.com/pacocoursey/dusk#cli"
+        href="https://github.com/pacocoursey/dusk#cli-"
         target="_blank"
         rel="noopener noreferrer"
       >
