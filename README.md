@@ -8,60 +8,65 @@ simple, customizable macOS application icons.
   <img height="100" width="100" src="assets/atom.png">
 </p>
 
-## Install [![npm version](https://badge.fury.io/js/dusk-icons.svg)](https://badge.fury.io/js/dusk-icons)
+## Install
+
+Dusk icons can be used from the command line, via the [Dusk website](https://dusk.now.sh), or as React components [(dusk-react)](https://github.com/pacocoursey/dusk-react).
+
+### CLI [![npm version](https://badge.fury.io/js/dusk-icons.svg)](https://badge.fury.io/js/dusk-icons)
+
+Install the command line tool using npm:
 
 ```bash
 $ [sudo] npm install -g dusk-icons
 ```
 
-## Usage
-
-Run `dusk-icons` from the command line. You will be prompted for a background, foreground, and secondary foreground color. A list of valid icons to generate can be found below.
+Then run `dusk-icons` from the command line. You will be prompted for icon colors. A list of valid icons to generate can be found below.
 
 ## Icons
 
-- [X] iMovie
-- [X] Contacts
-- [X] Calendar
-- [X] Console
-- [X] Dashboard
-- [X] Numbers
-- [X] Launchpad
-- [X] Maps
-- [X] Pages
-- [X] Xcode
-- [X] Skype
-- [X] Reminders
-- [X] Dictionary
-- [X] Trash
-- [X] Terminal
-- [X] System Preferences
-- [X] Photos
-- [X] Notes
-- [X] News
-- [X] Books
-- [X] Camera
-- [X] Font Book
-- [X] Chess
-- [X] Dropbox
-- [X] Facetime
-- [X] Activity Monitor
-- [X] App Store
-- [X] Left
-- [X] Dotgrid
-- [X] iTunes
-- [X] Preview
-- [X] Electron
-- [X] Atom
-- [X] Calculator
-- [X] Google Chrome
-- [X] Discord
-- [X] Enpass
-- [X] Finder
-- [X] Hyper
-- [X] Illustrator
-- [X] Messages
-- [X] Mail
-- [X] Photoshop
-- [X] Safari
-- [X] Spotify
+
+- Activity Monitor
+- App Store
+- Atom
+- Books
+- Calculator
+- Calendar
+- Camera
+- Chess
+- Console
+- Contacts
+- Dashboard
+- Dictionary
+- Discord
+- Dotgrid
+- Dropbox
+- Electron
+- Enpass
+- Facetime
+- Finder
+- Font Book
+- Google Chrome
+- Hyper
+- Illustrator
+- iMovie
+- iTunes
+- Launchpad
+- Left
+- Mail
+- Maps
+- Messages
+- News
+- Notes
+- Numbers
+- Pages
+- Photos
+- Photoshop
+- Preview
+- Reminders
+- Safari
+- Skype
+- Spotify
+- System Preferences
+- Terminal
+- Trash
+- Xcode
