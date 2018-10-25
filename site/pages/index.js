@@ -1,12 +1,15 @@
 import React from 'react';
+import Icons from '../components/Icons';
 import Layout from '../components/Layout';
 import Search from '../components/Search';
+import Colors from '../components/Colors';
 import IconGrid from '../components/IconGrid';
-import icons from '../components/Icons';
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
+
+    const icons = Icons({});
 
     this.state = {
       initialItems: icons,
@@ -28,12 +31,20 @@ class Index extends React.Component {
     });
   }
 
+  updateColors(o) {
+    const icons = Icons(o);
+    this.setState({
+      items: icons,
+    });
+  }
+
   render() {
     const { items, query } = this.state;
 
     return (
       <Layout>
         <Search onChange={e => this.filterList(e)} />
+        <Colors handleClick={o => this.updateColors(o)} />
         <IconGrid icons={items} query={query} />
       </Layout>
     );
