@@ -1,11 +1,15 @@
 {
   "name": "dusk-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple, customizable macOS application icons",
   "main": "./index.js",
   "bin": {
     "dusk-icons": "./index.js"
   },
+  "files": [
+    "svg",
+    "index.js"
+  ],
   "repository": "pacocoursey/dusk",
   "keywords": [
     "dusk",
