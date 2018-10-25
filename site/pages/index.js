@@ -1,19 +1,8 @@
 import React from 'react';
-import { ActivityMonitor, FaceTime } from 'dusk-react';
 import Layout from '../components/Layout';
 import Search from '../components/Search';
 import IconGrid from '../components/IconGrid';
-
-const icons = [
-  {
-    svg: <ActivityMonitor size={100} />,
-    name: 'Activity Monitor',
-  },
-  {
-    svg: <FaceTime size={100} />,
-    name: 'FaceTime',
-  },
-];
+import icons from '../components/Icons';
 
 class Index extends React.Component {
   constructor(props) {
