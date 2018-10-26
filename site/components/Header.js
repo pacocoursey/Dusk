@@ -5,6 +5,7 @@ const Link = styled.a`
   text-decoration: none;
   text-decoration: none;
   color: #757575;
+  cursor: pointer;
   transition: color 200ms;
 
   :hover {
@@ -57,23 +58,24 @@ const Header = () => (
   <Nav>
     <Left>
       <Link
-        href="https://github.com/pacocoursey/dusk"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div>Docs</div>
-      </Link>
-
-      <Link
         href="https://github.com/pacocoursey/dusk#cli-"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div>CLI</div>
+        CLI
+      </Link>
+      <Link
+        href="https://github.com/pacocoursey/dusk#usage"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Usage
       </Link>
     </Left>
 
-    <Center>Dusk</Center>
+    <Center>
+      Dusk
+    </Center>
 
     <Right>
       <Link
@@ -81,7 +83,7 @@ const Header = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        <div>GitHub</div>
+        GitHub
       </Link>
     </Right>
   </Nav>

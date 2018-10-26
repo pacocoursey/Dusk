@@ -27,7 +27,7 @@ const Icon = styled.div`
   align-items: center;
 
   cursor: pointer;
-  transition: background-color 200ms;
+  transition: background-color 100ms;
 
   :hover {
     background-color: #efefef;

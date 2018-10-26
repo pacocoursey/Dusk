@@ -116,14 +116,15 @@ class Colors extends React.Component {
     super(props);
 
     this.state = {
-      bg: '',
-      fg: '',
-      fg2: '',
+      bg: '#1e1e1e',
+      fg: '#fff',
+      fg2: '#efefef',
     };
   }
 
   render() {
     const { active, applyColors, resetColors } = this.props;
+    const { bg, fg, fg2 } = this.state;
 
     return (
       <Box active={active}>
@@ -131,7 +132,7 @@ class Colors extends React.Component {
           <Name>Background</Name>
           <TextInput
             type="text"
-            defaultValue="#1e1e1e"
+            value={bg}
             maxLength={7}
             onChange={e => this.setState({ bg: e.target.value })}
           />
@@ -141,7 +142,7 @@ class Colors extends React.Component {
           <Name>Foreground</Name>
           <TextInput
             type="text"
-            defaultValue="#fff"
+            value={fg}
             maxLength={7}
             onChange={e => this.setState({ fg: e.target.value })}
           />
@@ -151,13 +152,21 @@ class Colors extends React.Component {
           <Name>Secondary</Name>
           <TextInput
             type="text"
-            defaultValue="#efefef"
+            value={fg2}
             maxLength={7}
             onChange={e => this.setState({ fg2: e.target.value })}
           />
         </Input>
 
-        <Reset onClick={() => resetColors()}>
+        <Reset onClick={() => {
+          this.setState({
+            bg: '#1e1e1e',
+            fg: '#fff',
+            fg2: '#efefef',
+          });
+          resetColors();
+        }}
+        >
           Reset
         </Reset>
 
