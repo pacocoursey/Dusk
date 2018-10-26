@@ -15,6 +15,7 @@
     "downloadjs": "^1.4.7",
     "dusk-react": "0.0.4",
     "next": "^7.0.2",
+    "next-offline": "^3.0.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
