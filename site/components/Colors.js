@@ -3,9 +3,8 @@ import styled from 'styled-components';
 
 const Box = styled.div`
   width: 100%;
-  height: 100px;
   max-width: 990px;
-  padding: 0 20px;
+  padding: 20px;
   margin-bottom: 30px;
 
   border-radius: 3px;
@@ -22,7 +21,9 @@ const Box = styled.div`
 
 const Input = styled.div`
   width: 25%;
+  min-width: 200px;
   border-radius: 3px;
+  margin: 10px;
 
   display: flex;
   flex-direction: row;
@@ -44,7 +45,6 @@ const Name = styled.div`
 const TextInput = styled.input`
   flex: 1;
 
-  width: 100%;
   min-width: 0;
   padding: 15px;
 
@@ -62,6 +62,7 @@ const TextInput = styled.input`
 
 const Button = styled.button`
   padding: 15px;
+  margin: 10px;
 
   color: #343a40;
   font-size: 12px;
