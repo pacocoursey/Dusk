@@ -5,6 +5,7 @@ import download from 'downloadjs';
 
 const Grid = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1000px;
