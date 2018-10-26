@@ -1,5 +1,7 @@
 import React from 'react';
+import { renderToString } from 'react-dom/server';
 import styled from 'styled-components';
+import download from 'downloadjs';
 
 const Grid = styled.div`
   display: flex;
@@ -67,7 +69,16 @@ const IconGrid = ({ icons, query }) => (
           &quot;
         </None>
       ) : icons.map(icon => (
-        <Icon key={icon.name}>
+        <Icon
+          key={icon.name}
+          onClick={() => {
+            download(
+              renderToString(icon.svg),
+              `${icon.shortName}.svg`,
+              'image/svg+xml',
+            );
+          }}
+        >
           <div>
             {icon.svg}
           </div>

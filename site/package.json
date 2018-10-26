@@ -12,6 +12,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "downloadjs": "^1.4.7",
     "dusk-react": "0.0.4",
     "next": "^7.0.2",
     "prop-types": "^15.6.2",

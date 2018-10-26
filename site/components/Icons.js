@@ -9,6 +9,7 @@ const Icons = (props) => {
   const icons = [];
 
   Object.keys(dusk).forEach((icon) => {
+    const shortName = icon;
     const name = icon
       .replace(/([A-Z])/g, ' $1')
       .replace(/^./, str => str.toUpperCase());
@@ -21,6 +22,7 @@ const Icons = (props) => {
         fg2: fg2 || '#efefef',
       }),
       name,
+      shortName,
     });
   });
 
