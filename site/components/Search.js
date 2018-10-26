@@ -43,7 +43,8 @@ const Toggle = styled.button`
   background-color: transparent;
   transition: background-color 200ms;
 
-  :hover {
+  :hover,
+  :focus {
     background-color: #f8f9fa;
   }
 
@@ -58,6 +59,7 @@ const Search = (props) => {
   return (
     <Box>
       <SearchBar
+        aria-label="Search icons"
         type="text"
         placeholder="Search icons..."
         onChange={e => onChange(e)}

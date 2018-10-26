@@ -20,7 +20,7 @@ const Box = styled.div`
 `;
 
 const Input = styled.div`
-  width: 25%;
+  width: 20%;
   min-width: 200px;
   border-radius: 3px;
   margin: 10px;
@@ -77,7 +77,8 @@ const Button = styled.button`
   background-color: transparent;
   transition: background-color 200ms;
 
-  :hover {
+  :hover,
+  :focus {
     background-color: #f8f9fa;
   }
 
@@ -86,29 +87,11 @@ const Button = styled.button`
   }
 `;
 
-const Reset = styled.button`
-  padding: 15px;
-
+const Reset = styled(Button)`
   color: #868e96;
-  font-size: 12px;
   font-weight: 400;
-  text-transform: uppercase;
-
   border: 0;
-  border-radius: 3px;
-
-  cursor: pointer;
-  outline: none;
   background-color: transparent;
-  transition: background-color 200ms;
-
-  :hover {
-    background-color: #f8f9fa;
-  }
-
-  :active {
-    background-color: #f1f3f5;
-  }
 `;
 
 class Colors extends React.Component {

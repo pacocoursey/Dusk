@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './Header';
 
@@ -32,6 +33,14 @@ const Main = styled.main`
 
 const Layout = ({ children }) => (
   <Wrapper>
+    <Head>
+      <title>Dusk Icons</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name="description" content="Dusk: simple, customizable macOS application icons." />
+      <meta name="keywords" content="dusk, icons, macos, design, custom, app icon, os x" />
+      <meta name="author" content="Paco Coursey" />
+    </Head>
+
     <Header />
     <Main>
       { children }
