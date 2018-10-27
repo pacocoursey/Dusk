@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import NextLink from 'next/link';
 
 const Link = styled.a`
   text-decoration: none;
@@ -26,6 +27,7 @@ const Left = styled.div`
 `;
 
 const Center = styled.h1`
+  cursor: pointer;
   font-size: 24px;
   font-weight: 800;
   flex: 1;
@@ -57,6 +59,20 @@ const Nav = styled.nav`
 const Header = () => (
   <Nav>
     <Left>
+      <NextLink href="/about" prefetch>
+        <Link>
+          About
+        </Link>
+      </NextLink>
+    </Left>
+
+    <NextLink href="/" prefetch>
+      <Center>
+        Dusk
+      </Center>
+    </NextLink>
+
+    <Right>
       <Link
         href="https://github.com/pacocoursey/dusk#cli-"
         target="_blank"
@@ -64,20 +80,6 @@ const Header = () => (
       >
         CLI
       </Link>
-      <Link
-        href="https://github.com/pacocoursey/dusk#usage"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Usage
-      </Link>
-    </Left>
-
-    <Center>
-      Dusk
-    </Center>
-
-    <Right>
       <Link
         href="https://github.com/pacocoursey/dusk"
         target="_blank"
