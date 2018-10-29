@@ -68,7 +68,7 @@ const Header = () => (
 
     <NextLink href="/" prefetch>
       <Center>
-        Dusk
+        &#9790; Dusk
       </Center>
     </NextLink>
 

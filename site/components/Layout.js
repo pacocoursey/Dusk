@@ -35,10 +35,20 @@ const Layout = ({ children }) => (
   <Wrapper>
     <Head>
       <title>Dusk Icons</title>
+      <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Dusk: simple, customizable macOS application icons." />
-      <meta name="keywords" content="dusk, icons, macos, design, custom, app icon, os x" />
+      <meta name="description" content="simple, customizable macOS application icons." />
+      <meta name="keywords" content="dusk, icons, dusk icon, dusk icons, macos, design, custom, app icon, os x" />
       <meta name="author" content="Paco Coursey" />
+
+      {/* Favicon */}
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png" />
+      <link rel="manifest" href="/static/favicon/manifest." />
+      <link rel="mask-icon" href="/static/favicon/safari-pinned-tab.svg" color="#1e1e1e" />
+      <meta name="msapplication-TileColor" content="#ffffff" />
+      <meta name="theme-color" content="#ffffff" />
     </Head>
 
     <Header />
