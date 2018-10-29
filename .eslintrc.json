@@ -1,13 +1,6 @@
 {
     "extends": "airbnb",
     "rules": {
-      "no-console": "off",
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-      "jsx-a11y/anchor-is-valid": [ "error", {
-        "components": [ "Link" ],
-        "specialLink": [ "hrefLeft", "hrefRight" ],
-        "aspects": [ "invalidHref", "preferButton" ]
-      }],
-      "react/prop-types": 0
+      "no-console": "off"
     }
 }

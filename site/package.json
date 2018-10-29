@@ -6,10 +6,11 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "dev": "next",
-    "start": "next start",
+    "dev": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "build": "next build",
-    "export": "next build && next export"
+    "export": "next build && next export",
+    "lint": "eslint --ignore-path ../.gitignore ."
   },
   "dependencies": {
     "downloadjs": "^1.4.7",
@@ -21,5 +22,11 @@
     "react-dom": "^16.5.2",
     "styled-components": "^4.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
 }
