@@ -1,6 +1,6 @@
-FROM mhart/alpine-node:10 as base
+FROM mhart/alpine-node:10 as build
 WORKDIR /usr/src
-COPY package.json yarn.lock /usr/src/
+COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
 RUN yarn build && yarn --production
@@ -8,6 +8,6 @@ RUN yarn build && yarn --production
 FROM mhart/alpine-node:base-10
 WORKDIR /usr/src
 ENV NODE_ENV="production"
-COPY --from=base /usr/src .
-EXPOSE 3000
-CMD ["yarn", "start"]
+ENV PATH="./node_modules/.bin:$PATH"
+COPY --from=build /usr/src .
+CMD ["next", "start"]

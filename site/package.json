@@ -6,8 +6,8 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "dev": "node server.js",
-    "start": "NODE_ENV=production node server.js",
+    "dev": "node server",
+    "start": "NODE_ENV=production node server",
     "build": "next build",
     "export": "next build && next export",
     "lint": "eslint --ignore-path ../.gitignore ."
