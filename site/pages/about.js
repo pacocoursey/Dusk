@@ -49,7 +49,25 @@ const About = () => (
       <h1>About</h1>
       <Text>
         Dusk is a collection of simple, customizable macOS application icons.
-        You can use them via command line, download from this website, or view the source on GitHub.
+        You can generate them via
+        {' '}
+        <a
+          href="https://github.com/pacocoursey/dusk#cli-"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          command line
+        </a>
+        , download from this website, or view the source on
+        {' '}
+        <a
+          href="https://github.com/pacocoursey/dusk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        .
       </Text>
 
       <h1>Motivation</h1>
@@ -61,7 +79,11 @@ const About = () => (
       <h1>Usage</h1>
       <Text>
         Replacing application icons can be done manually or using&nbsp;
-        <a href="http://freemacsoft.net/liteicon/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="http://freemacsoft.net/liteicon/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LiteIcon
         </a>
       .
@@ -72,7 +94,7 @@ const About = () => (
       <Text>
         Open the information panel for the application using
         {' '}
-        <kbd>&#8984;+I</kbd>
+        <kbd>&#8984;I</kbd>
         {' '}
         or right clicking and selecting &quot;Get Info&quot;.
       </Text>
@@ -84,8 +106,7 @@ const About = () => (
       <Text>
         Open the replacement icon in Preview and copy it using
         {' '}
-        <kbd>&#8984;+A</kbd>
-        <kbd>&#8984;+C</kbd>
+        <kbd>&#8984;A &#8984;C</kbd>
         {' '}
         .
       </Text>
@@ -98,7 +119,7 @@ const About = () => (
         Click the icon in the top left of the information panel so that it has a blue outline.
         Paste the new icon using
         {' '}
-        <kbd>&#8984;+V</kbd>
+        <kbd>&#8984;V</kbd>
         .
       </Text>
 
