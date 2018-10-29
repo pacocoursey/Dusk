@@ -10,6 +10,7 @@
     "start": "NODE_ENV=production node server",
     "build": "next build",
     "export": "next build && next export",
+    "deploy": "now && now alias",
     "lint": "eslint --ignore-path ../.gitignore ."
   },
   "dependencies": {
