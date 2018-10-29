@@ -10,4 +10,4 @@ WORKDIR /usr/src
 ENV NODE_ENV="production"
 COPY --from=base /usr/src .
 EXPOSE 3000
-CMD ["node", "./node_modules/.bin/next", "start"]
+CMD ["yarn", "start"]

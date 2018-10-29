@@ -1,7 +1,10 @@
 {
-  "alias": "dusk.now.sh",
+  "alias": "dusk",
   "type": "docker",
   "features": {
     "cloud": "v2"
+  },
+  "env": {
+    "NODE_ENV": "production"
   }
 }
