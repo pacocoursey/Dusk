@@ -53,6 +53,12 @@ async function convertIcons(options) {
       const outputPath = path.resolve(output, `${icon}.png`);
       const inputPath = path.join(__dirname, `svg/${icon}.svg`);
 
+      const exists = await fs.pathExists(inputPath);
+      if (!exists) {
+        fail(`Icon ${icon} does not exist.`);
+        continue;
+      }
+
       // Read the original svg file
       let tmpFile = await readFile(inputPath, 'utf-8');
 
