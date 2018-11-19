@@ -18,7 +18,7 @@ Many application icons are sufficiently minimal and do not need modification. In
 
 ### Format
 
-Dusk icons are defined as SVG files. Use a circle of radius `512px`. Center the design element within the circle. Generally, the design element should be constrained to a max height/width of `255px`, whichever is bigger. This limit is flexible. The size of the design element should feel natural and comparable to other icons.
+Dusk icons are defined as SVG files. Use a circle of radius `256px` (height and width of `512px`). Center the design element within the circle. Generally, the design element should be constrained to a max height/width of `255px`, whichever is bigger. This limit is flexible. The size of the design element should feel natural and comparable to other icons.
 
 ## Pull Requests
 
