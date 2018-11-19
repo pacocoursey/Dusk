@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "downloadjs": "^1.4.7",
-    "dusk-react": "^0.0.8",
+    "dusk-react": "^0.0.9",
     "next": "^7.0.2",
     "next-offline": "^3.0.3",
     "prop-types": "^15.6.2",

@@ -56,7 +56,10 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 - Enpass
 - Facetime
 - Finder
+- Firefox
 - Font Book
+- Framer
+- Franz
 - Google Chrome
 - Hyper
 - Illustrator
@@ -81,4 +84,5 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 - System Preferences
 - Terminal
 - Trash
+- VSCode
 - Xcode
