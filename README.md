@@ -24,7 +24,7 @@ Then run `dusk-icons` from the command line. You will be prompted for icon color
 
 ## Contributing
 
-For info on how to contribute to Dusk, please see the [contribution guidelines](https:/github.com/pacocoursey/dusk/blob/master/CONTRIBUTING.md).
+For info on how to contribute to Dusk, please see the [contribution guidelines](https://github.com/pacocoursey/dusk/blob/master/CONTRIBUTING.md).
 
 ## Examples
 
