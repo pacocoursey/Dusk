@@ -22,8 +22,20 @@ $ [sudo] npm install -g dusk-icons
 
 Then run `dusk-icons` from the command line. You will be prompted for icon colors. A list of valid icons to generate can be found below.
 
-## Icons
+## Contributing
 
+For info on how to contribute to Dusk, please see the [contribution guidelines](https:/github.com/pacocoursey/dusk/blob/master/CONTRIBUTING.md).
+
+## Examples
+
+![Dusk Customized Dock Example](assets/dock.png)
+
+## Related
+
+- [LiteIcon](https://freemacsoft.net/liteicon/): app which allows you to change your system icons.
+- [Feather](https://github.com/colebemis/feather): Simple, beautiful open source icons.
+
+## Icons
 
 - Activity Monitor
 - App Store
