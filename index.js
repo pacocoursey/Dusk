@@ -64,9 +64,9 @@ async function convertIcons(options) {
 
       // Replace with specified colors
       tmpFile = tmpFile
-        .replace(/{{bg}}/g, bg)
-        .replace(/{{fg}}/g, fg)
-        .replace(/{{fg2}}/g, fg2);
+        .replace(/#1e1e1e/gi, bg)
+        .replace(/#fff/gi, fg)
+        .replace(/#efefef/gi, fg2);
 
       // Write the temporary svg file
       const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
