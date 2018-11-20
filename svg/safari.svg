@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><circle fill="{{bg}}" cx="256" cy="256" r="256"/><path fill="{{fg}}" d="M396.535 115.466L232.578 232.578 115.465 396.535l163.958-117.112z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512"><circle fill="#1e1e1e" cx="256" cy="256" r="256"/><path fill="#fff" d="M396.535 115.466L232.578 232.578 115.465 396.535l163.958-117.112z"/></svg>

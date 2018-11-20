@@ -37,52 +37,53 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 
 ## Icons
 
-- Activity Monitor
-- App Store
-- Atom
-- Books
-- Calculator
-- Calendar
-- Camera
-- Chess
-- Console
-- Contacts
-- Dashboard
-- Dictionary
-- Discord
-- Dotgrid
-- Dropbox
-- Electron
-- Enpass
-- Facetime
-- Finder
-- Firefox
-- Font Book
-- Framer
-- Franz
-- Google Chrome
-- Hyper
-- Illustrator
-- iMovie
-- iTunes
-- Launchpad
-- Left
-- Mail
-- Maps
-- Messages
-- News
-- Notes
-- Numbers
-- Pages
-- Photos
-- Photoshop
-- Preview
-- Reminders
-- Safari
-- Skype
-- Spotify
-- System Preferences
-- Terminal
-- Trash
-- VSCode
-- Xcode
+| Application | Icon Name | Alternates |
+| :---------- | :-------- | :--------- |
+| Activity Monitor    | `activity_monitor`  |
+| Adobe Illustrator | `illustrator` |
+| Adobe Photoshop | `photoshop` |
+| App Store | `app_store` |
+| Atom | `atom` |
+| Books | `books` |
+| Calculator | `calculator` |
+| Calendar | `calendar` |
+| Camera | `camera` |
+| Chess | `chess` |
+| Console | `console` |
+| Contacts | `contacts` |
+| Dashboard | `dashboard` |
+| Dictionary | `dictionary` |
+| Discord | `discord` |
+| Dotgrid | `dotgrid` |
+| Dropbox | `dropbox` |
+| Electron | `electron` |
+| Enpass | `enpass` |
+| Facetime | `facetime` |
+| Finder | `finder` | `finder2`, `finder3`
+| Firefox | `firefox` |
+| Font Book | `font_book` |
+| Framer | `framer` |
+| Franz | `franz` |
+| Google Chrome | `chrome` | `chrome2`
+| Hyper | `hyper` |
+| iMovie | `imovie` |
+| iTunes | `itunes` |
+| Launchpad | `launchpad` |
+| Left | `left` |
+| Mail | `mail` |
+| Maps | `maps` |
+| Messages | `messages` |
+| News | `news` |
+| Notes | `notes` |
+| Numbers | `numbers` |
+| Pages | `pages` |
+| Photos | `photos` |
+| Reminders | `reminders` |
+| Safari | `safari` |
+| Skype | `skype` |
+| Spotify | `spotify` |
+| System Preferences | `system_preferences` |
+| Terminal | `terminal` |
+| Trash | `trash` |
+| VSCode | `vscode` |
+| Xcode | `xcode` |
