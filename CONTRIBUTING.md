@@ -12,7 +12,7 @@ Please [create an issue](https://github.com/pacocoursey/dusk/issues/new?title=Ic
 
 ### Design Guidelines
 
-Dusk icons aim to replicate the design of application icons with a single, defining element that is easily recognizable in any colorway. For example, the Safari application icon can be identified based solely on the compass needle.
+Dusk icons aim to replicate the design of application icons with a single, defining element that is easily recognizable in any colorway. For example, the Safari application icon can be identified based solely on the compass needle. Please see the [template files](https://github.com/pacocoursey/Dusk/tree/master/templates) to design your own icon.
 
 Many application icons are sufficiently minimal and do not need modification. In the case of a complex design, please try to simplify it to a single design element.
 
