@@ -85,6 +85,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Slack | `slack` |
 | Spotify | `spotify` |
 | System Preferences | `system_preferences` |
+| Telegram | `telegram` |
 | Terminal | `terminal` |
 | Todoist | `todoist` |
 | Trash | `trash` |
