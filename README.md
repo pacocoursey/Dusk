@@ -75,12 +75,14 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Messages | `messages` |
 | News | `news` |
 | Notes | `notes` |
+| Notion | `notion` |
 | Numbers | `numbers` |
 | Pages | `pages` |
 | Photos | `photos` |
 | Reminders | `reminders` |
 | Safari | `safari` |
 | Skype | `skype` |
+| Slack | `slack` |
 | Spotify | `spotify` |
 | System Preferences | `system_preferences` |
 | Terminal | `terminal` |
