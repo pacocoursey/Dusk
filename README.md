@@ -86,6 +86,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Spotify | `spotify` |
 | System Preferences | `system_preferences` |
 | Terminal | `terminal` |
+| Todoist | `todoist` |
 | Trash | `trash` |
 | VSCode | `vscode` |
 | Xcode | `xcode` |
