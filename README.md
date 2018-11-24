@@ -90,5 +90,6 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Terminal | `terminal` |
 | Todoist | `todoist` |
 | Trash | `trash` |
+| Trello | `trello` |
 | VSCode | `vscode` |
 | Xcode | `xcode` |
