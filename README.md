@@ -67,6 +67,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Google Chrome | `chrome` | `chrome2`
 | Hyper | `hyper` |
 | iMovie | `imovie` |
+| iTerm2 | `iterm2` |
 | iTunes | `itunes` |
 | Launchpad | `launchpad` |
 | Left | `left` |
