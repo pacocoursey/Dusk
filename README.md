@@ -74,6 +74,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Mail | `mail` |
 | Maps | `maps` |
 | Messages | `messages` |
+| Microsoft Teams | `teams` |
 | News | `news` |
 | Notes | `notes` |
 | Notion | `notion` |
