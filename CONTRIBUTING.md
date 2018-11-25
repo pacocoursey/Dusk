@@ -18,9 +18,15 @@ Many application icons are sufficiently minimal and do not need modification. In
 
 ### Format
 
-Dusk icons are defined as SVG files. Use a circle of radius `256px` (height and width of `512px`). Center the design element within the circle. Generally, the design element should be constrained to a max height/width of `255px`, whichever is bigger. This limit is flexible. The size of the design element should feel natural and comparable to other icons. A stroke-width of `20px` is preferred, but try to match existing icons.
+Dusk icons are defined as SVG files.
 
-After completing the svg file, please run `svgo <icon>.svg` to minimize it and standardize the format. You can install [svgo](https://github.com/svg/svgo) using:
+- Use a circle of radius `256px` (height and width of `512px`).
+- Center the design element within the circle.
+- Constrain the design element to a max height/width of `255px` (this limit is flexible, the size of the design element should feel natural and comparable to other icons).
+- Prefer a stroke-width of `20px` (but try match existing icons).
+- Tilted design elements should have a rotation of `9deg`.
+
+After completing the svg file, install [svgo](https://github.com/svg/svgo) and run `svgo <icon>.svg` to minimize it and standardize the format.
 
 ```
 $ [sudo] npm install -g svgo
