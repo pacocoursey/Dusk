@@ -23,7 +23,7 @@ $ [sudo] npm install -g dusk-icons
 Then run `dusk-icons` from the command line. Enter a list of comma separated icons.
 
 <p align="center">
-  <img src="assets/example.gif" />
+  <img src="assets/example.gif" width="500px" />
 </p>
 
 ## Contributing
