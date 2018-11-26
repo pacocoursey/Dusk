@@ -33,6 +33,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 ## Examples
 
 ![Dusk Customized Dock Example](assets/dock.png)
+![Dusk Customized Dock Example 2](assets/dock2.png)
 
 ## Related
 
