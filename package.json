@@ -1,6 +1,6 @@
 {
   "name": "dusk-icons",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "simple, customizable macOS application icons",
   "main": "./index.js",
   "bin": {
@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "convert-svg-to-png": "^0.4.0",
+    "expand-home-dir": "^0.0.3",
     "fs-extra": "^7.0.0",
     "prompts": "^1.1.1"
   },

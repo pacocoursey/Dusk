@@ -5,6 +5,7 @@ const fs = require('fs-extra');
 const prompts = require('prompts');
 const { promisify } = require('util');
 const { convertFile } = require('convert-svg-to-png');
+const expandHomeDir = require('expand-home-dir');
 
 const writeFile = promisify(fs.writeFile);
 const readFile = promisify(fs.readFile);
@@ -70,7 +71,12 @@ async function convertIcons(options) {
 
       // Write the temporary svg file
       const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
-      await writeFile(tmpFilePath, tmpFile, 'utf-8');
+
+      try {
+        await writeFile(tmpFilePath, tmpFile, 'utf-8');
+      } catch (err) {
+        fail(`Error creating temporary svg file for ${icon}.`)
+      }
 
       // Pass the temporary svg file to convert it
       const file = await convert(tmpFilePath, outputPath);
@@ -122,6 +128,19 @@ async function start() {
       name: 'output',
       message: 'Output directory:',
       initial: '.',
+      validate: async (value) => {
+        let output = value;
+        if (output.charAt(0) === '~') {
+          output = expandHomeDir(output);
+        }
+
+        const exists = await fs.pathExists(output);
+        if (!exists) {
+          return 'This output path does not exist.';
+        }
+
+        return true;
+      },
     },
     {
       type: 'text',
@@ -162,6 +181,11 @@ async function start() {
     });
 
     const { icons } = response;
+
+    // Handle home directory paths
+    if (response.output.charAt(0) === '~') {
+      response.output = expandHomeDir(response.output);
+    }
 
     if (icons.includes('all')) {
       try {
