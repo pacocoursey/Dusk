@@ -20,7 +20,11 @@ Install the command line tool using npm:
 $ [sudo] npm install -g dusk-icons
 ```
 
-Then run `dusk-icons` from the command line. You will be prompted for icon colors. A list of valid icons to generate can be found below.
+Then run `dusk-icons` from the command line. Enter a list of comma separated icons.
+
+<p align="center">
+  <img src="assets/example.gif" />
+</p>
 
 ## Contributing
 
