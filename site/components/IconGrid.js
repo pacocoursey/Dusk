@@ -1,7 +1,6 @@
 import React from 'react';
-import { renderToString } from 'react-dom/server';
 import styled from 'styled-components';
-import download from 'downloadjs';
+import { saveSvgAsPng } from 'save-svg-as-png';
 
 const Grid = styled.div`
   display: flex;
@@ -58,36 +57,50 @@ const None = styled.div`
   user-select: none;
 `;
 
-const IconGrid = ({ icons, query }) => (
-  <Grid>
+class IconGrid extends React.Component {
+  constructor(props) {
+    super(props);
 
-    {
-      icons.length === 0 ? (
-        <None>
-          No results found for
-          &quot;
-          {query}
-          &quot;
-        </None>
-      ) : icons.map(icon => (
-        <Icon
-          key={icon.name}
-          onClick={() => {
-            download(
-              renderToString(icon.svg),
-              `${icon.shortName}.svg`,
-              'image/svg+xml',
-            );
-          }}
-        >
-          <div>
-            {icon.svg}
-          </div>
-          <p>{icon.name}</p>
-        </Icon>
-      ))
-    }
-  </Grid>
-);
+    const { icons } = props;
+    this.icons = {};
+    icons.forEach((icon) => {
+      this.icons[icon.name] = React.createRef();
+    });
+  }
+
+  render() {
+    const { icons, query } = this.props;
+    return (
+      <Grid>
+        {
+          icons.length === 0 ? (
+            <None>
+              No results found for
+              &quot;
+              {query}
+              &quot;
+            </None>
+          ) : icons.map(icon => (
+            <Icon
+              key={icon.name}
+              ref={this.icons[icon.name]}
+              onClick={() => {
+                saveSvgAsPng(
+                  this.icons[icon.name].current.children[0].children[0],
+                  `${icon.shortName}.png`,
+                );
+              }}
+            >
+              <div>
+                {icon.svg}
+              </div>
+              <p>{icon.name}</p>
+            </Icon>
+          ))
+        }
+      </Grid>
+    );
+  }
+}
 
 export default IconGrid;
