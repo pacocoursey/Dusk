@@ -1,4 +1,5 @@
 {
+  "name": "Dusk",
   "alias": "dusk",
   "version": 1,
   "type": "docker",
