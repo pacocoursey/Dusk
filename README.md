@@ -65,6 +65,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Electron | `electron` |
 | Enpass | `enpass` |
 | Facetime | `facetime` |
+| Figma | `figma` |
 | Finder | `finder` | `finder2`, `finder3`
 | Firefox | `firefox` |
 | Font Book | `font_book` |
