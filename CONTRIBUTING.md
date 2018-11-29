@@ -6,9 +6,9 @@ Thanks for your interest in contributing to Dusk! 🖤
 
 Want to see an icon for your favorite app? Want to offer an alternative icon? I'd love to include it.
 
-Please [create an issue](https://github.com/pacocoursey/dusk/issues/new?title=Icon%20Request:) with the title `Icon Request: <app name>`. If you have already designed the icon, please include a screenshot and a link to the SVG of the icon. If you have not, that's OK! Include some details and a link to the application and someone else will design it.
+Please [create an issue](https://github.com/pacocoursey/dusk/issues/new?title=Icon%20Request:) with the title `Icon Request: <app name>`, a link to the application, an image of the logo, and someone will design it!
 
-> Because Dusk icons span multiple projects (website, CLI, and react package), it is preferred that you open an issue rather than a pull request. This way, it can be added to each package reliably.
+If you have already designed the icon yourself, please [open a pull request](https://github.com/pacocoursey/Dusk/pulls) with the title `Add Icon: <app name>` after adding the `.svg` file to the `svg/` folder, and listing the icon in the table at the bottom of the README.
 
 ### Design Guidelines
 
@@ -26,10 +26,12 @@ Dusk icons are defined as SVG files.
 - Prefer a stroke-width of `20px` (but try match existing icons).
 - Tilted design elements should have a rotation of `9deg`.
 
-After completing the svg file, install [svgo](https://github.com/svg/svgo) and run `svgo <icon>.svg` to minimize it and standardize the format.
+After completing the design, export it to an svg file and minimize it using:
 
-```
-$ [sudo] npm install -g svgo
+```bash
+$ yarn build
+# or
+$ npm run build
 ```
 
 ## Pull Requests
