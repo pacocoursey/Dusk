@@ -89,6 +89,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Pages | `pages` |
 | Photos | `photos` |
 | Postman | `postman` |
+| Preview | `preview` |
 | Reminders | `reminders` |
 | Safari | `safari` |
 | Skype | `skype` |
