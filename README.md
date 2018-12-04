@@ -66,12 +66,12 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Enpass | `enpass` |
 | Facetime | `facetime` |
 | Figma | `figma` |
-| Finder | `finder` | `finder2`, `finder3`
+| Finder | `finder` | `finder2`, `finder3` |
 | Firefox | `firefox` |
 | Font Book | `font_book` |
 | Framer | `framer` |
 | Franz | `franz` |
-| Google Chrome | `chrome` | `chrome2`
+| Google Chrome | `chrome` | `chrome2` |
 | Hyper | `hyper` |
 | iMovie | `imovie` |
 | iTerm2 | `iterm2` |
@@ -81,6 +81,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Mail | `mail` |
 | Maps | `maps` |
 | Messages | `messages` |
+| MongoDB Compass | `mongodb` |
 | Microsoft Teams | `teams` |
 | News | `news` |
 | Notes | `notes` |
