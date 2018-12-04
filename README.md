@@ -101,5 +101,6 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Todoist | `todoist` |
 | Trash | `trash` |
 | Trello | `trello` |
+| VLC | `vlc` |
 | VSCode | `vscode` |
 | Xcode | `xcode` |
