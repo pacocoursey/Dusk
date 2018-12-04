@@ -90,6 +90,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Pages | `pages` |
 | Photos | `photos` |
 | Postman | `postman` |
+| Preview | `preview` |
 | Quicktime Player | `quicktime` |
 | Reminders | `reminders` |
 | Safari | `safari` |
