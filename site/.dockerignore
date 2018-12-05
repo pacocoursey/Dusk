@@ -1,8 +1,0 @@
-*
-!components
-!pages
-!static
-!server.js
-!next.config.js
-!package.json
-!yarn.lock
