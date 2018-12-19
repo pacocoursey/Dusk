@@ -1,12 +1,5 @@
 {
   "name": "Dusk",
   "alias": "dusk",
-  "version": 1,
-  "type": "docker",
-  "features": {
-    "cloud": "v2"
-  },
-  "env": {
-    "NODE_ENV": "production"
-  }
+  "version": 2
 }
