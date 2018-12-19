@@ -87,6 +87,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Notes | `notes` |
 | Notion | `notion` |
 | Numbers | `numbers` |
+| OBS | `obs` |
 | Pages | `pages` |
 | Photos | `photos` |
 | Postman | `postman` |
