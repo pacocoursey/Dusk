@@ -98,6 +98,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Skype | `skype` |
 | Slack | `slack` |
 | Spotify | `spotify` |
+| Steam | `steam` |
 | System Preferences | `system_preferences` |
 | Telegram | `telegram` |
 | Terminal | `terminal` |
