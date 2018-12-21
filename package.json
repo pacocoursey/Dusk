@@ -25,6 +25,7 @@
     "lint": "eslint --ignore-path .gitignore ."
   },
   "dependencies": {
+    "arg": "^3.0.0",
     "convert-svg-to-png": "^0.4.0",
     "expand-home-dir": "^0.0.3",
     "fs-extra": "^7.0.0",

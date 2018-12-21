@@ -1,14 +1,32 @@
 #!/usr/bin/env node
 
+const arg = require('arg');
 const path = require('path');
 const fs = require('fs-extra');
 const prompts = require('prompts');
 const { promisify } = require('util');
 const { convertFile } = require('convert-svg-to-png');
 const expandHomeDir = require('expand-home-dir');
+const { version } = require('./package.json');
 
 const writeFile = promisify(fs.writeFile);
 const readFile = promisify(fs.readFile);
+
+const bold = '\x1b[1m';
+const reset = '\x1b[0m';
+
+function usage() {
+  console.log(`
+    ${bold}Usage${reset}:
+
+      dusk-icons [<flags>]
+
+    ${bold}Flags${reset}:
+
+      -h, --help      Output usage information
+      -v, --version   Show application version
+  `);
+}
 
 function fail(msg) {
   console.log(`✖ ${msg}`);
@@ -203,4 +221,22 @@ async function start() {
   }
 }
 
-start();
+const args = arg({
+  '--version': Boolean,
+  '--help': Boolean,
+
+  '-v': '--version',
+  '-h': '--help',
+}, {
+  permissive: true,
+});
+
+if (args['--version']) {
+  console.log(version);
+  process.exit(1);
+} else if (args['--help']) {
+  usage();
+  process.exit(1);
+} else {
+  start();
+}

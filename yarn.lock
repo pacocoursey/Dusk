@@ -78,6 +78,11 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+arg@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/arg/-/arg-3.0.0.tgz#386c20035dfbeb13e280ca8a1e6868aa17942def"
+  integrity sha512-C5Scb477yHhNck9AFzW5RwAzS2Eqn0HR+Fv0pmcZBXBT8g/g7OOuZTr0upVSSUGWZQH+XWdAKIw2OfC86EuggQ==
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
