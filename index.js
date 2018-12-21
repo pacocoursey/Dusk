@@ -90,7 +90,7 @@ async function convertIcons(options) {
       // Using function to avoid multiple replacements
       tmpFile = tmpFile.replace(
         /#1e1e1e|#fff|#efefef/gi,
-        matched => map[matched],
+        matched => map[matched.toLowerCase()],
       );
 
       // Write the temporary svg file
