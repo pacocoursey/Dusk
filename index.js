@@ -65,8 +65,7 @@ async function convertIcons(options) {
     icons,
   } = options;
 
-  /* eslint-disable */
-  for (icon of icons) {
+  for (let icon of icons) {
     try {
       icon = icon.replace(' ', '_');
       const outputPath = path.resolve(output, `${icon}.png`);
@@ -81,11 +80,18 @@ async function convertIcons(options) {
       // Read the original svg file
       let tmpFile = await readFile(inputPath, 'utf-8');
 
+      const map = {
+        '#1e1e1e': bg,
+        '#fff': fg,
+        '#efefef': fg2,
+      };
+
       // Replace with specified colors
-      tmpFile = tmpFile
-        .replace(/#1e1e1e/gi, bg)
-        .replace(/#fff/gi, fg)
-        .replace(/#efefef/gi, fg2);
+      // Using function to avoid multiple replacements
+      tmpFile = tmpFile.replace(
+        /#1e1e1e|#fff|#efefef/gi,
+        matched => map[matched],
+      );
 
       // Write the temporary svg file
       const tmpFilePath = path.resolve(output, `${icon}-tmp.svg`);
@@ -93,7 +99,7 @@ async function convertIcons(options) {
       try {
         await writeFile(tmpFilePath, tmpFile, 'utf-8');
       } catch (err) {
-        fail(`Error creating temporary svg file for ${icon}.`)
+        fail(`Error creating temporary svg file for ${icon}.`);
       }
 
       // Pass the temporary svg file to convert it
@@ -113,7 +119,6 @@ async function convertIcons(options) {
       process.exit(1);
     }
   }
-  /* eslint-enable */
 }
 
 async function convertAll(response) {

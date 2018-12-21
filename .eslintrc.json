@@ -1,6 +1,9 @@
 {
     "extends": "airbnb",
     "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "no-continue": "off",
+      "no-await-in-loop": "off",
+      "no-restricted-syntax": "off"
     }
 }
