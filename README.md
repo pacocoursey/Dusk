@@ -45,6 +45,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Application | Icon Name | Alternates |
 | :---------- | :-------- | :--------- |
 | Activity Monitor    | `activity_monitor`  |
+| Affinity | `affinity` |
 | Anki | `anki` |
 | Adobe Illustrator | `illustrator` |
 | Adobe Photoshop | `photoshop` |
