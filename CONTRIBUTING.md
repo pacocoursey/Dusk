@@ -26,6 +26,8 @@ Dusk icons are defined as SVG files.
 - Prefer a stroke-width of `20px` (but try match existing icons).
 - Tilted design elements should have a rotation of `9deg`.
 
+Icons that include text should use [Gilroy Extra Bold](https://www.tinkov.info/gilroy.html).
+
 After completing the design, export it to an svg file and minimize it using:
 
 ```bash
