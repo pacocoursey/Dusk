@@ -95,6 +95,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Quicktime Player | `quicktime` |
 | Reminders | `reminders` |
 | Safari | `safari` |
+| Sequel Pro | `sequel_pro` |
 | Sketch | `sketch` |
 | Skype | `skype` |
 | Slack | `slack` |
