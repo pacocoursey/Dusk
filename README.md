@@ -102,7 +102,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Sequel Pro | `sequel_pro` |
 | Sketch | `sketch` |
 | Skype | `skype` |
-| Slack | `slack` |
+| Slack | `slack` | `slack2` |
 | Spotify | `spotify` |
 | Steam | `steam` |
 | System Preferences | `system_preferences` |
