@@ -103,6 +103,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Sketch | `sketch` |
 | Skype | `skype` |
 | Slack | `slack` | `slack2` |
+| SnippetsLab | `snippetslab` |
 | Spotify | `spotify` |
 | Steam | `steam` |
 | System Preferences | `system_preferences` |
