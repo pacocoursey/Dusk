@@ -72,6 +72,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Font Book | `font_book` |
 | Framer | `framer` |
 | Franz | `franz` |
+| Git Fork | `fork` |
 | Google Chrome | `chrome` | `chrome2` |
 | Hyper | `hyper` |
 | iMovie | `imovie` |
