@@ -44,10 +44,13 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 
 | Application | Icon Name | Alternates |
 | :---------- | :-------- | :--------- |
+| 1Password    | `1password`  |
+| Ableton    | `ableton`  |
 | Activity Monitor    | `activity_monitor`  |
 | Affinity | `affinity` |
 | Anki | `anki` |
 | Adobe Illustrator | `illustrator` |
+| Adobe Lightroom | `lightroom` |
 | Adobe Photoshop | `photoshop` |
 | App Store | `app_store` |
 | Atom | `atom` |
@@ -101,7 +104,8 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Sequel Pro | `sequel_pro` |
 | Sketch | `sketch` |
 | Skype | `skype` |
-| Slack | `slack` |
+| Slack | `slack` | `slack2` |
+| SnippetsLab | `snippetslab` |
 | Spotify | `spotify` |
 | Steam | `steam` |
 | System Preferences | `system_preferences` |
@@ -113,4 +117,5 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Vivaldi | `vivaldi` |
 | VLC | `vlc` |
 | VSCode | `vscode` |
+| Whatsapp | `whatsapp` |
 | Xcode | `xcode` |
