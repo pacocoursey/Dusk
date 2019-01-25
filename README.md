@@ -112,6 +112,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Telegram | `telegram` |
 | Terminal | `terminal` |
 | Todoist | `todoist` |
+| Transmit | `transmit` |
 | Trash | `trash` |
 | Trello | `trello` |
 | Vivaldi | `vivaldi` |
