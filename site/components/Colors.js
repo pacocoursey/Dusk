@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const localStorageExists = window && window.localStorage;
+
 const Box = styled.div`
   width: 100%;
   max-width: 990px;
@@ -57,7 +59,6 @@ const TextInput = styled.input`
 
   outline: none;
   transition: border 200ms;
-
 `;
 
 const Button = styled.button`
@@ -103,11 +104,22 @@ class Colors extends React.Component {
       fg: '#fff',
       fg2: '#efefef',
     };
+
+    if (localStorageExists) {
+      const colors = window.localStorage.getItem('colors');
+      if (colors) {
+        this.state = JSON.parse(colors);
+      }
+    }
   }
 
   render() {
     const { active, applyColors, resetColors } = this.props;
     const { bg, fg, fg2 } = this.state;
+
+    if (localStorageExists) {
+      window.localStorage.setItem('colors', JSON.stringify(this.state));
+    }
 
     return (
       <Box active={active}>
@@ -141,21 +153,20 @@ class Colors extends React.Component {
           />
         </Input>
 
-        <Reset onClick={() => {
-          this.setState({
-            bg: '#1e1e1e',
-            fg: '#fff',
-            fg2: '#efefef',
-          });
-          resetColors();
-        }}
+        <Reset
+          onClick={() => {
+            this.setState({
+              bg: '#1e1e1e',
+              fg: '#fff',
+              fg2: '#efefef',
+            });
+            resetColors();
+          }}
         >
           Reset
         </Reset>
 
-        <Button onClick={() => applyColors(this.state)}>
-          Apply
-        </Button>
+        <Button onClick={() => applyColors(this.state)}>Apply</Button>
       </Box>
     );
   }
