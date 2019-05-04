@@ -78,6 +78,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Franz | `franz` |
 | Git | `branch` |
 | Git Fork | `fork` |
+| GitHub Desktop | `github_desktop` |
 | Google Chrome | `chrome` | `chrome2` |
 | Hyper | `hyper` |
 | iMovie | `imovie` |
