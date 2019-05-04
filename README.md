@@ -54,6 +54,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Adobe Photoshop | `photoshop` |
 | App Store | `app_store` |
 | Atom | `atom` |
+| Bear | `bear` |
 | Books | `books` |
 | Calculator | `calculator` |
 | Calendar | `calendar` |
