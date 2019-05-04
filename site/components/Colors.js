@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const localStorageExists = window && window.localStorage;
+let localStorageExists = false;
+
+try {
+  localStorageExists = window && window.localStorage;
+} catch {}
 
 const Box = styled.div`
   width: 100%;
