@@ -47,7 +47,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | 1Password    | `1password`  |
 | Ableton    | `ableton`  |
 | Activity Monitor    | `activity_monitor`  |
-| Affinity | `affinity` |
+| Affinity | `affinity` | `affinity_designer`, `affinity_photo`, `affinity_publisher` |
 | Anki | `anki` |
 | Adobe Illustrator | `illustrator` |
 | Adobe Lightroom | `lightroom` |
