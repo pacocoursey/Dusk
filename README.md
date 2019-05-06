@@ -101,6 +101,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Postman | `postman` |
 | Preview | `preview` |
 | Quicktime Player | `quicktime` |
+| Quip | `quip` |
 | Reminders | `reminders` |
 | Safari | `safari` |
 | Sequel Pro | `sequel_pro` |
