@@ -15,7 +15,7 @@
     "lint": "eslint --ignore-path ../.gitignore ."
   },
   "dependencies": {
-    "dusk-react": "^1.0.9",
+    "dusk-react": "^1.0.11",
     "next": "^7.0.2",
     "next-offline": "^3.0.3",
     "prop-types": "^15.6.2",
