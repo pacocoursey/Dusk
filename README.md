@@ -89,6 +89,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Mail | `mail` |
 | Maps | `maps` |
 | Messages | `messages` |
+| Facebook Messenger | `messenger` |
 | MongoDB Compass | `mongodb` |
 | Microsoft Teams | `teams` |
 | News | `news` |
