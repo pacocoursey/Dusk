@@ -77,10 +77,11 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Framer | `framer` |
 | Franz | `franz` |
 | Git | `branch` |
+| Brave Browser | `brave` |
 | Git Fork | `fork` |
 | GitHub Desktop | `github_desktop` |
 | Google Chrome | `chrome` | `chrome2` |
-| Hyper | `hyper` |
+| Hyper | `hyper` | `hyper3` |
 | iMovie | `imovie` |
 | iTerm2 | `iterm2` |
 | iTunes | `itunes` |
