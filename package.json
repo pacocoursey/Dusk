@@ -20,8 +20,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "svgo svg/*.svg",
-    "prebulishOnly": "svgo svg/*.svg",
+    "build": "svgo -f svg",
+    "prebulishOnly": "svgo -f svg",
     "lint": "eslint --ignore-path .gitignore ."
   },
   "dependencies": {
