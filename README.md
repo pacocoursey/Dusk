@@ -44,12 +44,16 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 
 | Application | Icon Name | Alternates |
 | :---------- | :-------- | :--------- |
-| 1Password | `1password`  |
-| Ableton | `ableton`  |
-| Activity Monitor | `activity_monitor`  |
+| 1Password | `1password` |
+| Ableton | `ableton` |
+| Activity Monitor | `activity_monitor` |
+| Adobe After Effects | `after_effects` |
 | Adobe Illustrator | `illustrator` |
+| Adobe InDesign | `indesign` |
 | Adobe Lightroom | `lightroom` |
 | Adobe Photoshop | `photoshop` |
+| Adobe Premiere Pro | `premiere_pro` |
+| Adobe Xd | `adobe_xd` |
 | Affinity | `affinity` | `affinity_designer`, `affinity_photo`, `affinity_publisher` |
 | Anki | `anki` |
 | App Store | `app_store` |
