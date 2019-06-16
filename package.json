@@ -1,6 +1,6 @@
 {
   "name": "dusk-icons",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "simple, customizable macOS application icons",
   "main": "./index.js",
   "bin": {
