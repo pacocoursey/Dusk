@@ -44,18 +44,23 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 
 | Application | Icon Name | Alternates |
 | :---------- | :-------- | :--------- |
-| 1Password    | `1password`  |
-| Ableton    | `ableton`  |
-| Activity Monitor    | `activity_monitor`  |
-| Affinity | `affinity` | `affinity_designer`, `affinity_photo`, `affinity_publisher` |
-| Anki | `anki` |
+| 1Password | `1password` |
+| Ableton | `ableton` |
+| Activity Monitor | `activity_monitor` |
+| Adobe After Effects | `after_effects` |
 | Adobe Illustrator | `illustrator` |
+| Adobe InDesign | `indesign` |
 | Adobe Lightroom | `lightroom` |
 | Adobe Photoshop | `photoshop` |
+| Adobe Premiere Pro | `premiere_pro` |
+| Adobe Xd | `adobe_xd` |
+| Affinity | `affinity` | `affinity_designer`, `affinity_photo`, `affinity_publisher` |
+| Anki | `anki` |
 | App Store | `app_store` |
 | Atom | `atom` |
 | Bear | `bear` |
 | Books | `books` |
+| Brave Browser | `brave` |
 | Calculator | `calculator` |
 | Calendar | `calendar` |
 | Camera | `camera` |
@@ -69,6 +74,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Dropbox | `dropbox` |
 | Electron | `electron` |
 | Enpass | `enpass` |
+| Facebook Messenger | `messenger` |
 | Facetime | `facetime` |
 | Figma | `figma` |
 | Finder | `finder` | `finder2`, `finder3` |
@@ -77,12 +83,12 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Framer | `framer` |
 | Franz | `franz` |
 | Git | `branch` |
-| Brave Browser | `brave` |
 | Git Fork | `fork` |
 | GitHub Desktop | `github_desktop` |
 | Google Chrome | `chrome` | `chrome2` |
 | Hyper | `hyper` | `hyper3` |
 | iMovie | `imovie` |
+| IntelliJ | `intellij` |
 | iTerm2 | `iterm2` |
 | iTunes | `itunes` |
 | Launchpad | `launchpad` |
@@ -90,9 +96,8 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Mail | `mail` |
 | Maps | `maps` |
 | Messages | `messages` |
-| Facebook Messenger | `messenger` |
-| MongoDB Compass | `mongodb` |
 | Microsoft Teams | `teams` |
+| MongoDB Compass | `mongodb` |
 | News | `news` |
 | Notes | `notes` |
 | Notion | `notion` |
@@ -107,6 +112,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Reminders | `reminders` |
 | Safari | `safari` |
 | Sequel Pro | `sequel_pro` |
+| Simulator | `simulator` |
 | Sketch | `sketch` |
 | Skype | `skype` |
 | Slack | `slack` | `slack2` |
@@ -115,6 +121,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Spotify | `spotify` |
 | Steam | `steam` |
 | System Preferences | `system_preferences` |
+| TablePlus | `tableplus` |
 | Telegram | `telegram` |
 | Terminal | `terminal` |
 | Todoist | `todoist` |
@@ -126,3 +133,4 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | VSCode | `vscode` |
 | Whatsapp | `whatsapp` |
 | Xcode | `xcode` |
+| Zoom | `zoom` |
