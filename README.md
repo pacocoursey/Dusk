@@ -133,4 +133,4 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | VSCode | `vscode` |
 | Whatsapp | `whatsapp` |
 | Xcode | `xcode` |
-| Zoom | `zoomapp` |
+| Zoom | `zoom` |
