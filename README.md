@@ -72,6 +72,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Discord | `discord` |
 | Dotgrid | `dotgrid` |
 | Dropbox | `dropbox` |
+| Eagle | `eagle` |
 | Electron | `electron` |
 | Enpass | `enpass` |
 | Facebook Messenger | `messenger` |
@@ -105,6 +106,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | OBS | `obs` |
 | Pages | `pages` |
 | Photos | `photos` |
+| PocketCast | `pocketcast` |
 | Postman | `postman` |
 | Preview | `preview` |
 | Quicktime Player | `quicktime` |
@@ -124,6 +126,8 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | TablePlus | `tableplus` |
 | Telegram | `telegram` |
 | Terminal | `terminal` |
+| Ticktick | `ticktick` |
+| Tidal | `tidal` |
 | Todoist | `todoist` |
 | Transmit | `transmit` |
 | Trash | `trash` |
