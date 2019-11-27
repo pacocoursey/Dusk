@@ -135,6 +135,7 @@ For info on how to contribute to Dusk, please see the [contribution guidelines](
 | Vivaldi | `vivaldi` |
 | VLC | `vlc` |
 | VSCode | `vscode` |
+| Wechat | `wechat` |
 | Whatsapp | `whatsapp` |
 | Xcode | `xcode` |
 | Zoom | `zoom` |
