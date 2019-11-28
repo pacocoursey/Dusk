@@ -5,7 +5,9 @@ let localStorageExists = false;
 
 try {
   localStorageExists = window && window.localStorage;
-} catch {}
+} catch (e) {
+  // Do nothing
+}
 
 const Box = styled.div`
   width: 100%;

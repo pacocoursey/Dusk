@@ -6,21 +6,18 @@
   "keywords": [],
   "license": "MIT",
   "scripts": {
-    "dev": "node server",
-    "start": "NODE_ENV=production node server",
+    "dev": "next",
+    "start": "next start",
     "build": "next build",
-    "export": "next build && next export",
-    "predeploy": "yarn export",
-    "deploy": "now ./out -A ../now.json && now alias",
     "lint": "eslint --ignore-path ../.gitignore ."
   },
   "dependencies": {
     "dusk-react": "^1.1.2",
-    "next": "^7.0.2",
+    "next": "^9.1.4",
     "next-offline": "^3.0.3",
     "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "save-svg-as-png": "^1.4.6",
     "styled-components": "^4.0.2"
   },
