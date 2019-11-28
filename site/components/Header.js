@@ -59,14 +59,14 @@ const Nav = styled.nav`
 const Header = () => (
   <Nav>
     <Left>
-      <NextLink href="/about" prefetch>
+      <NextLink href="/about">
         <Link>
           About
         </Link>
       </NextLink>
     </Left>
 
-    <NextLink href="/" prefetch>
+    <NextLink href="/">
       <Center>
         &#9790; Dusk
       </Center>

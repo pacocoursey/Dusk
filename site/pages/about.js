@@ -100,7 +100,7 @@ const About = () => (
       </Text>
 
       <Image>
-        <img src="/static/a.png" alt="Example Application Information Panel" />
+        <img src="/a.png" alt="Example Application Information Panel" />
       </Image>
 
       <Text>
@@ -112,7 +112,7 @@ const About = () => (
       </Text>
 
       <Image>
-        <img src="/static/b.png" alt="Example Replacement Icon in Preview" />
+        <img src="/b.png" alt="Example Replacement Icon in Preview" />
       </Image>
 
       <Text>
@@ -124,8 +124,8 @@ const About = () => (
       </Text>
 
       <Image>
-        <img src="/static/c.png" alt="Pasting into Application Information Panel" />
-        <img src="/static/d.png" alt="New Icon in the Application Information Panel" />
+        <img src="/c.png" alt="Pasting into Application Information Panel" />
+        <img src="/d.png" alt="New Icon in the Application Information Panel" />
       </Image>
     </Box>
   </Layout>
