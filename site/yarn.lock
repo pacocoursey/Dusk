@@ -2494,10 +2494,10 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-dusk-react@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/dusk-react/-/dusk-react-1.1.2.tgz#ac80553de64abab1c18d794dce1222ff5e9a5ce0"
-  integrity sha512-vxmZP67kMhON+3cNSJ2az9buZEr8M98QtsX0nRtFPv+TXtrCYiJiJwUjk5tRwd4BjqAwmnmG44rKn6/GvJjicQ==
+dusk-react@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/dusk-react/-/dusk-react-1.1.3.tgz#f8e8af67f3b027974f261344ce349b0f555046b9"
+  integrity sha512-HY04mdOheSVKPOyXfv7WdqJwWEthKoMr5mkl6USV0M1GQ6muyEhQdT/8873os96sZo1gqf9d0qPxaxKUnOoNcQ==
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -3883,20 +3883,19 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+locate-path@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
+  integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
+  dependencies:
+    p-locate "^4.1.0"
+
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha1-DM8tiRZq8Ds2Y8eWU4t1rG4RTZ0=
 
-lodash.template@^4.4.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
-  integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
-  dependencies:
-    lodash._reinterpolate "^3.0.0"
-    lodash.templatesettings "^4.0.0"
-
-lodash.template@^4.5.0:
+lodash.template@^4.4.0, lodash.template@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
   integrity sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==
